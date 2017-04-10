@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Express 14 for Web
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorKata.App", "StringCalculatorKata.App\StringCalculatorKata.App.csproj", "{F3927A6D-8A78-40B4-839A-E38261536600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorKata.Tests", "StringCalculatorKata.Tests\StringCalculatorKata.Tests.csproj", "{354DFD56-0EC1-44E1-92AD-22994E05AF24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorKata.Tests", "..\..\..\..\documents\visual studio 2015\Projects\test1\StringCalculatorKata.Tests\StringCalculatorKata.Tests.csproj", "{86322AB5-39CF-4616-A718-526911A8344A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F3927A6D-8A78-40B4-839A-E38261536600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3927A6D-8A78-40B4-839A-E38261536600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3927A6D-8A78-40B4-839A-E38261536600}.Release|Any CPU.Build.0 = Release|Any CPU
-		{354DFD56-0EC1-44E1-92AD-22994E05AF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{354DFD56-0EC1-44E1-92AD-22994E05AF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{354DFD56-0EC1-44E1-92AD-22994E05AF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{354DFD56-0EC1-44E1-92AD-22994E05AF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86322AB5-39CF-4616-A718-526911A8344A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86322AB5-39CF-4616-A718-526911A8344A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86322AB5-39CF-4616-A718-526911A8344A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86322AB5-39CF-4616-A718-526911A8344A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
