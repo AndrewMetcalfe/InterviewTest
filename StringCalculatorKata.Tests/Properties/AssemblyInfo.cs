@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("StringCalculatorKata.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Moon Jupiter Limited")]
 [assembly: AssemblyProduct("StringCalculatorKata.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright © Moon Jupiter Limited 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d96a799a-c6d4-4374-bb16-ba7cfbc33a6e")]
+[assembly: Guid("86322ab5-39cf-4616-a718-526911a8344a")]
 
 // Version information for an assembly consists of the following four values:
 //

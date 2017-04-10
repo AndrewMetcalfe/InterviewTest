@@ -1,14 +1,17 @@
-﻿using Xunit;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using StringCalculatorKata.App;
 
 namespace StringCalculatorKata.Tests
 {
+    [TestClass]
     public class StringCalculatorTests
     {
         /*
          *  Prerequsites
          * 	    Visual Studio 2015
          *      .Net 4.5 or higher
-         *      XUnit
+         *      XUnit ----------------------> switched to us MSTest
          *      Core & Test projects
          *      Nuget
          *       
@@ -38,55 +41,105 @@ namespace StringCalculatorKata.Tests
          *  The test uses the XUnit testing framework, please feel free to refer to the documentation @ https://xunit.github.io/
          */
 
-        [Fact]
+        [TestMethod]
         public void Calculate_EmptyString_ReturnsZero()
         {
             //e.g. "" = 0
-            //var calculator = new StringCalculator();
-            //calculator.Add();
-            Assert.True(false);
+
+            // Arrange
+            var expectedValue = 0;
+            var calculator = new StringCalculator();
+
+            // Act
+            var returnedValue = calculator.Sum();
+
+            // Assert
+            Assert.AreEqual(expectedValue, returnedValue);
         }
 
-        [Fact (Skip = "complete previous test first")]
+        [TestMethod]
         public void Calculate_SingleNumber_ReturnsSameNumber()
         {
             //e.g. "1" = 1
+
+            // Arrange
+            var inputValue = "1";
+            var expectedValue = 1;
+            var calculator = new StringCalculator();
+
+            // Act
+            var returnedValue = calculator.Sum(inputValue);
+
+            // Assert
+            Assert.AreEqual(expectedValue, returnedValue);
         }
 
-        [Fact (Skip = "complete previous test first")]
+        [TestMethod]
         public void Calculate_TwoNumbers_ReturnsSum()
         {
             //e.g. "1,2" = 3
+
+            // Arrange
+            var inputValue = "1,2";
+            var expectedValue = 3;
+            var calculator = new StringCalculator();
+
+            // Act
+            var returnedValue = calculator.Sum(inputValue);
+
+            // Assert
+            Assert.AreEqual(expectedValue, returnedValue);
         }
 
-        [Fact(Skip = "complete previous test first")]
+        [TestMethod]
         public void Calculate_FiveNumbers_ReturnsSum()
         {
             //e.g. "1,2,3,4,5" = 15
+
+            // Arrange
+            var inputValue = "1,2,3,4,5";
+            var expectedValue = 15;
+            var calculator = new StringCalculator();
+
+            // Act
+            var returnedValue = calculator.Sum(inputValue);
+
+            // Assert
+            Assert.AreEqual(expectedValue, returnedValue);
         }
 
-        [Fact(Skip = "complete previous test first")]
-        public void Calculate_CanUseAlternativeDelimiters_ReturnsSum()
-        {
-            //e.g. "1|2|3" = 6
-        }
+        //[Fact(Skip = "complete previous test first")]
+        //public void Calculate_CanUseAlternativeDelimiters_ReturnsSum()
+        //{
+        //    //e.g. "1|2|3" = 6
+        //}
 
-        [Fact(Skip = "complete previous test first")]
-        public void Calculate_NumbersLargerThan100_IgnoresOver100sInSum()
-        {
-            //e.g. "1,2,100" = 3
-        }
+        //[Fact(Skip = "complete previous test first")]
+        //public void Calculate_NumbersLargerThan100_IgnoresOver100sInSum()
+        //{
+        //    //e.g. "1,2,100" = 3
+        //}
 
-        [Fact(Skip = "complete previous test first")]
+        [TestMethod]
         public void Calculate_NonNumericValue_ReturnsZero()
         {
             //e.g. "1,Elephant,6" = 0
+            // Arrange
+            var inputValue = "1,Elephant,6";
+            var expectedValue = 0;
+            var calculator = new StringCalculator();
+
+            // Act
+            var returnedValue = calculator.Sum(inputValue);
+
+            // Assert
+            Assert.AreEqual(expectedValue, returnedValue);
         }
 
-        [Fact(Skip = "complete previous test first")]
-        public void Calculate_FirstSevenInFibonacciSequence_ThrowsCustomFibonacciAlertException()
-        {
-            //e.g. "0,1,1,2,3,5,8" = FibonacciAlertException!
-        }
+        //[Fact(Skip = "complete previous test first")]
+        //public void Calculate_FirstSevenInFibonacciSequence_ThrowsCustomFibonacciAlertException()
+        //{
+        //    //e.g. "0,1,1,2,3,5,8" = FibonacciAlertException!
+        //}
     }
 }
